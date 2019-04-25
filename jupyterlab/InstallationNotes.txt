@@ -1,0 +1,64 @@
+Installation Instructions:
+
+Create directory for project:
+cd to new directory
+
+clone project:
+git clone https://github.com/Larz60p/MakerProjectApril2019
+cd to MakerProjectApril2019
+
+Create virtual environment:
+python -M venv venv
+
+Activate virtualenv:
+. ./venv/bin/activate
+
+install packages:
+pip install --upgrade pip
+pip install pylint
+pip install lxml
+pip install requests
+pip install BeautifulSoup4
+pip install Selenium
+
+Webdriver:
+Create directory directly below MakerProjectApril2019 named drivers
+
+for firefox:
+Go to: https://github.com/mozilla/geckodriver/releases
+download release for your browser to new drivers folder
+unpack
+copy geckodriver to ../venv/bin
+
+for chrome:
+go to http://chromedriver.chromium.org/downloads
+download release for your browser to new drivers folder
+unpack 
+copy chromedriver
+
+from MakerProjectApril2019 directory:
+python ./jupyterlab/BusinessPaths.py
+
+If you use VisualStudioCode follow these steps to set up code:
+
+o Open VSCode, if a project is open, close it
+o click File/Open Folder
+o navigate to folder just above MakerProjectApril2019
+o Highlight MakerProjectApril2019
+o click Ok
+o Type ctrl/Shift/P
+o click on Python:Select Interpreter
+o Find entry './venv/bin/python
+o Click
+
+venv is now set up
+to test, in explorer window, click on jubpterlab then PreviewSearchPage.py
+from code window, right click and select run python code from terminal
+
+you should see a browser window come up, navigate through a couple of pages, print out some URL info and quit
+If this works, your entire system is properly set up.
+
+
+You should now have a data tree located at MakerProjectApril2019/data
+
+
